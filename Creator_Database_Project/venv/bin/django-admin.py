@@ -1,4 +1,4 @@
-#!/Users/priyamahalanobis/Documents/Avybe_Database_Project/Avybe_Database_Project/venv/bin/python3
+#!/Users/priyamahalanobis/Documents/Creator_Database_Project/Creator_Database_Project/venv/bin/python3
 from django.core import management
 
 if __name__ == "__main__":

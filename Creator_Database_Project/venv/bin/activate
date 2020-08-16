@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/priyamahalanobis/Documents/Django_Creator_Dashboard/Avybe_Database_Project/venv"
+VIRTUAL_ENV="/Users/priyamahalanobis/Documents/Django_username_dashboard/Creator_Database_Project/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
