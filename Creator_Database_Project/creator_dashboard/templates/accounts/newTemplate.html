@@ -1,0 +1,28 @@
+<!-- This is the template associated with the URL 'form_page'!!! -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Content Creator Dashboard</title>
+</head>
+<body>
+
+{% load crispy_forms_tags %}
+
+<!-- {% block content %} -->
+  <div class="container">
+    <form method="POST" class="form-group" enctype="multipart/form-data">
+      {% csrf_token %}
+      <fieldset class="form-group">
+        <legend class="border-bottom mb-4">Update or Change Your Username: </legend>
+        {{ form|crispy }}
+        <button class="btn" type="submit">Post</button>
+      </fieldset>
+
+    </form>
+  </div>
+<!-- {% endblock %} -->
+
+</body>
+</html>

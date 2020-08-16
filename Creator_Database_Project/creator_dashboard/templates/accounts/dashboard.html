@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Content Creator Dashboard</title>
+</head>
+<body>
+
+  <p class="row" style="padding-left: 60px;"> &nbsp; </p>
+  <!-- Deliberatley empty space -->
+
+    <h1 class="row" style="padding-left: 60px;">Welcome to your Content Creator Dashboard!</h1>
+
+    <p class="row"> &nbsp; </p>
+    <!-- Deliberatley empty space -->
+
+    <p class="row" style="padding-left: 60px;">Your current displayname is: 
+
+      {% for i in creators %}
+          {{i.name}}
+      {% endfor %}
+
+    </p>
+
+    <a style="padding-left: 60px" href="./newTemplate">Click here </a>if you would like to change your displayname or your profile picture.
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+</head>
+<body>
+
+<form method="POST" class="form-group">
+    {% csrf_token %}
+    <legend class="border-bottom mb-4">Update or Change your Username: </legend>
+    <div class="form-group">
+        <button class="btn" type="submit">Post</button>
+    </div>
+
+    <div id="div_id_name" class="form-group">
+        <label for="id_name" class="requiredField">"Name"<span class="asteriskField">*</span></label>
+        <input type="text" name="name" maxlength="200" class="textinput textInput form-control" required id="id_name">
+    </div>
+
+    <div id="div_id_upload" class="form-group">
+        <label for="id_upload" class> Upload </label>
+        <input type="file" name="upload" accept="image/*" class="clearablefileinput form-control-file" id="id_upload">
+        <input type="submit" value="Upload Image" name="submit">
+    </div>
+
+</form>
+
+
+</body>
+</html>
